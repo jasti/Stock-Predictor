@@ -16,7 +16,7 @@ alchemyObj.loadAPIKey("api_key.txt");
 result = alchemyObj.URLGetTitle("http://www.techcrunch.com/");
 print result
 
-'''
+''' 
 # Extract page text from a web URL (ignoring navigation links, ads, etc.).
 result = alchemyObj.URLGetText("http://www.reuters.com/article/2012/11/30/us-china-apple-iphone-idUSBRE8AT06G20121130?type=companyNews");
 print result

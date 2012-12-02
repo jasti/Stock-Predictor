@@ -24,3 +24,4 @@ If we decided to previously buy the stock ( based on a positive sentiment) and t
 
 
 
+   
