@@ -1,0 +1,59 @@
+===========================================
+AlchemyAPI Python SDK version 0.8: Examples
+===========================================
+
+These are Python code examples for the AlchemyAPI SDK.
+
+
+RUNNING EXAMPLES
+
+Several code examples are included to illustrate using the AlchemyAPI
+for named entity extraction, text classification, language identification,
+and other tasks.
+
+All code samples are within the "example" directory.
+
+To run these code samples you must first edit the (example/api_key.txt) file, 
+adding your assigned AlchemyAPI key.  You must also install the AlchemyAPI
+Python module (see ../README for installation instructions).
+
+Code Samples:
+
+   1. Entity Extraction: python entities.py
+
+   2. Concept Tagging: python concepts.py
+
+   3. Keyword Extraction: python keywords.py
+
+   4. Text Categorization: python categories.py
+
+   5. Language Identification: python language.py
+
+   6. HTML Text Extraction: python text_extract.py
+
+   7. HTML Structured Content Scraping: python constraint_queries.py
+
+   8. Microformats Extraction: python microformats.py
+
+   9. RSS / ATOM Feed Links Extraction: python feed_links.py
+
+  10. Sentiment analysis example: python sentiment.py
+  
+  11. Relations extraction example: python relations.py
+
+  12. Parameters Object example: python params_object.py
+
+  13. Author extraction example: python author.py
+
+  14. Targeted Sentiment example: python targeted_sentiment.py
+
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2009-2012 Orchestr8, LLC.
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Python itself, either Python version 2.5 or,
+at your option, any later version of Python 2.5 you may have available.
+
+
