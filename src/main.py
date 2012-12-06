@@ -13,24 +13,35 @@ import thread
 import time
 import stock.ystockquote as ystockquote
 
-
+def performAnalysis():
+    perform_sentiment_analysis()
+    perform_financial_analysis()
+    
 
 
 # Define a function for the thread
-def call_sentiment_analysis():
+def perform_sentiment_analysis():
     alchemyObj = AlchemyAPI.AlchemyAPI()
     # Load the API key from disk.
     alchemyObj.loadAPIKey("api_key.txt");
     # Extract sentiment from a web URL.
     result = alchemyObj.URLGetTextSentiment("http://www.reuters.com/article/2012/11/30/us-china-apple-iphone-idUSBRE8AT06G20121130?type=companyNews");
     
+    print result  
+
+
+def perform_financial_analysis():
     
-    # Stubbing dummy quote, but ideally get hold of the right stock and lookup price
-    print ystockquote.get_price('GOOG')
+    company_name = 'GOOG'
+        # Stubbing dummy quote, but ideally get hold of the right stock and lookup price
+    #before
+    print ystockquote.get_price(company_name)
     
-    # Kick off another thread that will fetch the price of the same quote after 5 mins.
-    print result    
-   
+    #after§
+    print ystockquote.get_price(company_name)
+    
+        # Kick off another thread that will fetch the price of the same quote after 5 mins.
+     
       
 
 words = []
@@ -50,7 +61,7 @@ for tweet in stream:
     
     
     try:
-        thread.start_new_thread(call_sentiment_analysis, () )
+        thread.start_new_thread(perform_sentiment_analysis, () )
     except:
         print "Error: unable to start thread"
 

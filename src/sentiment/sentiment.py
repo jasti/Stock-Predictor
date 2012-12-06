@@ -9,11 +9,11 @@ alchemyObj = AlchemyAPI.AlchemyAPI()
 
 
 # Load the API key from disk.
-alchemyObj.loadAPIKey("api_key.txt");
+alchemyObj.loadAPIKey("api_key.txt"); 
 
 
 # Extract sentiment from a web URL.
-result = alchemyObj.URLGetTextSentiment("http://www.reuters.com/article/2012/11/30/us-china-apple-iphone-idUSBRE8AT06G20121130?type=companyNews");
+result = alchemyObj.URLGetTextSentiment("http://www.reuters.com/article/2012/12/04/entertainment-us-netflix-disney-paytv-idUSBRE8B312Q20121204");
 print result
 
 
