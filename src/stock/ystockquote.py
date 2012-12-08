@@ -79,7 +79,7 @@ def get_all(symbol):
     data['price_sales_ratio'] = values[17]
     data['price_book_ratio'] = values[18]
     data['short_ratio'] = values[19]
-    return data
+
     
     
 def get_price(symbol): 
@@ -181,4 +181,5 @@ def get_historical_prices(symbol, start_date, end_date):
     days = urllib.urlopen(url).readlines()
     data = [day[:-2].split(',') for day in days]
     return data
+
     
