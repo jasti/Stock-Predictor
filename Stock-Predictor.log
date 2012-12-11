@@ -98,3 +98,20 @@
 2012-12-10 23:49:08,713 DEBUG Incoming tweet: RT @Reuters: Clinton cancels Middle East trip because of ill health http://t.co/hy6lx3pe
 2012-12-10 23:49:08,761 DEBUG Found link : http://t.co/hy6lx3pe 
 2012-12-10 23:49:08,761 DEBUG Uninterested Tweet: RT @Reuters: Clinton cancels Middle East trip because of ill health http://t.co/hy6lx3pe
+2012-12-10 23:53:43,540 DEBUG Connected to Reuters twitter stream and listening..
+2012-12-10 23:53:54,033 DEBUG Incoming tweet: RT @Reuters: U.S. "fiscal cliff" talks picking up pace http://t.co/ifuD2SyK
+2012-12-10 23:53:58,470 DEBUG Found link : http://t.co/ifuD2SyK 
+2012-12-10 23:54:00,038 DEBUG Uninterested Tweet: RT @Reuters: U.S. "fiscal cliff" talks picking up pace http://t.co/ifuD2SyK
+2012-12-10 23:54:46,848 DEBUG Incoming tweet: @Reuters  I am impressed with the new President of Mexico. I wish him success in every way.
+2012-12-10 23:54:47,179 DEBUG Uninterested Tweet: @Reuters  I am impressed with the new President of Mexico. I wish him success in every way.
+2012-12-10 23:55:33,430 DEBUG Incoming tweet: RT @Reuters: Thousands in New York protest China's rule of Tibet, urge U.N. action http://t.co/RBA4FsZd
+2012-12-10 23:55:33,730 DEBUG Found link : http://t.co/RBA4FsZd 
+2012-12-10 23:55:33,731 DEBUG Uninterested Tweet: RT @Reuters: Thousands in New York protest China's rule of Tibet, urge U.N. action http://t.co/RBA4FsZd
+2012-12-10 23:56:01,091 DEBUG Incoming tweet: @Reuters @ReutersTV
+2012-12-10 23:56:01,425 DEBUG Uninterested Tweet: @Reuters @ReutersTV
+2012-12-10 23:56:53,625 DEBUG Incoming tweet: RT @Reuters: Clinton cancels Middle East trip because of ill health http://t.co/hy6lx3pe
+2012-12-10 23:56:54,007 DEBUG Found link : http://t.co/hy6lx3pe 
+2012-12-10 23:56:54,008 DEBUG Uninterested Tweet: RT @Reuters: Clinton cancels Middle East trip because of ill health http://t.co/hy6lx3pe
+2012-12-10 23:57:03,046 DEBUG Incoming tweet: RT @Reuters: Mexican president confident of key reforms in 2013 http://t.co/ck5VgUly
+2012-12-10 23:57:03,362 DEBUG Found link : http://t.co/ck5VgUly 
+2012-12-10 23:57:03,363 DEBUG Uninterested Tweet: RT @Reuters: Mexican president confident of key reforms in 2013 http://t.co/ck5VgUly

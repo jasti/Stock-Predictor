@@ -28,7 +28,7 @@ logger.setLevel(logging.DEBUG)
 
 
 
-STOCK_GUAGE_TIME_INTERVAL_DIFFERENCE = 5
+STOCK_GUAGE_TIME_INTERVAL_DIFFERENCE = 120
 
 
 
@@ -77,7 +77,7 @@ class Predictor(object):
 
        
         #before
-        for i in range(3):
+        for i in range(1):
             
             if i ==0:
                 
