@@ -4,3 +4,4 @@
 
 3.Add all the companies that are available on the S&P 500
 
+4.Handle 's as part of regex. E.g : AIG's
