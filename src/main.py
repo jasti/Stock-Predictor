@@ -28,7 +28,7 @@ logger.setLevel(logging.DEBUG)
 
 
 
-STOCK_GUAGE_TIME_INTERVAL_DIFFERENCE = 2
+STOCK_GUAGE_TIME_INTERVAL_DIFFERENCE = 30
 
 
 
@@ -76,7 +76,7 @@ class Predictor(object):
 
        
         #before
-        for i in range(1):
+        for i in range(8):
             
             if i == 0:
                 
@@ -110,7 +110,7 @@ def checkIfValidTweet(tweetData):
         link_exists = re.search("http", tweetData)
         if link_exists:
             news_link = re.search("(?P<url>(http|https)?://[^\s]+)", tweetData).group("url")
-            logger.debug("Useful tweet %s ", tweetData)
+            logger.debug("Tweet with a link %s ", tweetData)
     
         # Parse the link out of the tweet
     

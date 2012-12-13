@@ -1,7 +1,16 @@
-1.Visualization of the log output
+1. Visualization of the log output
 
-2.Send the log out as an email or a hosting service 
+2. Send the log out as an email or a hosting service 
 
-3.Add all the companies that are available on the S&P 500
+3. Add all the companies that are available on the S&P 500
 
-4.Handle 's as part of regex. E.g : AIG's
+4. Handle 's as part of regex. E.g : AIG's
+
+5. Look at multiple timeframes and not just 2 min intervals
+
+
+Analysis
+
+1. Correlation between the strength of the sentiment vs the revenue made
+
+2. With multiple timeframes of reversing positions, we understand what the best time for reversing a position might be.
