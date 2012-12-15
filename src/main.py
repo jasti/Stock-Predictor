@@ -109,8 +109,9 @@ def checkIfValidTweet(tweetData):
        
         link_exists = re.search("http", tweetData)
         if link_exists:
-            news_link = re.search("(?P<url>(http|https)?://[^\s]+)", tweetData).group("url")
-            logger.debug("Tweet with a link %s ", tweetData)
+            if (re.search("(?P<url>(http|https)?://[^\s]+)", tweetData)):
+                news_link = re.search("(?P<url>(http|https)?://[^\s]+)", tweetData).group("url")
+                logger.debug("Tweet with a link %s ", tweetData)
     
         # Parse the link out of the tweet
     
@@ -139,24 +140,25 @@ logger.debug("Connected to Reuters twitter stream and listening..")
 for tweet in stream:
 #while True:
      
-    
-    logger.debug("Incoming tweet: %s", tweet['text'])
-    isValidTweet, company_ticker_name, news_link = checkIfValidTweet(tweet['text'])
-    
-    if(isValidTweet):
+    if(tweet['text']):
         
-        # Create a unique id and keep track 
-        uniqueId = str(time.time())
-        newsId = uniqueId.replace(".", "")
-
-        # Spawn a new thread for sentiment analysis and 'trade' engine 
-        try:
-            thread.start_new_thread(Predictor.perform_analysis, (Predictor(), newsId, company_ticker_name, news_link))
-        except:
-            logger.error("Error: unable to start thread")
-
-    else :
-        logger.debug("Useless Tweet: %s", tweet['text'])     
+        logger.debug("Incoming tweet: %s", tweet['text'])
+        isValidTweet, company_ticker_name, news_link = checkIfValidTweet(tweet['text'])
+        
+        if(isValidTweet):
+            
+            # Create a unique id and keep track 
+            uniqueId = str(time.time())
+            newsId = uniqueId.replace(".", "")
+    
+            # Spawn a new thread for sentiment analysis and 'trade' engine 
+            try:
+                thread.start_new_thread(Predictor.perform_analysis, (Predictor(), newsId, company_ticker_name, news_link))
+            except:
+                logger.error("Error: unable to start thread")
+    
+        else :
+            logger.debug("Useless Tweet: %s", tweet['text'])     
 
     # Once previous action is done, kick off another thread to look for stock price in 5 mins and document 
 
